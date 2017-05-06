@@ -1,3 +1,4 @@
+<!-- partial:partial/_header.html -->
 <!DOCTYPE html>
 <html>
 	<head>
@@ -5,6 +6,8 @@
 		<title></title>
 		<link rel="stylesheet" href="/css/app.css">
 	</head>
+<!-- partial -->
+
 	<body>
 
 		<div class="container">
@@ -31,9 +34,32 @@
 					</a>
 				</div>
 
+
 			</div>
 		</div>
 
-	</body>
+		<div class="container">
+			<div class="row">
+				<div id="gallery" class="gallery">
+
+				</div>
+				<script id="template" type="x-tmpl-mustache">
+					{{#gallery}}
+						<div class="col-sm-6 col-md-4">
+							<div class="thumbnail">
+								<img src="img/{{image}}">
+							</div>
+							<div class="caption">
+								<h3 class="text-center">{{destiny}}</h3>
+							</div>
+						</div>
+					{{/gallery}}
+				</script>
+			</div>
+		</div>
+
+<!-- partial:partial/_footer.html -->
+</body>
 	<script src="js/main.js"></script>
 </html>
+<!-- partial -->
